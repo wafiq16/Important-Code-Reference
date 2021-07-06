@@ -1,4 +1,4 @@
-int pin1 = 3;
+eint pin1 = 3;
 int pin2 = 5;
 int pinPwmMotor = 6;
 int pwmMotor = 255;

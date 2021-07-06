@@ -1,0 +1,9 @@
+{
+    "folders": [
+		{
+			"name": "ESP32 Wind Direction",
+			"path": ".."
+		}
+	],
+    "settings": {}
+}
