@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include<SPI.h>
+#include <SPI.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WiFiMulti.h>
 #include <ESP8266HTTPClient.h>
@@ -45,7 +45,7 @@ void loop(void) {
 void postData() {
   // Tambahkan nilai suhu pada URL yang sudah kita buat
   
-  http.begin(url + strSuhuTerima + "&kelembapan=" + strKelembapanTerima + "&tegangan=" + strTeganganTerima);
+  http.begin(clientku ,url + strSuhuTerima + "&kelembapan=" + strKelembapanTerima + "&tegangan=" + strTeganganTerima);
   int httpCode = http.GET();
 
   if (httpCode > 0)

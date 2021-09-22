@@ -1,11 +1,11 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
-#include <HTTPClient.h>
+//#include <HTTPClient.h>
 #include <ArduinoJson.h>
 
 // Update these with values suitable for your network.
-char* ssid = "jims";
-char* password = "12344321";
+char* ssid = "hehehe";
+char* password = "12345679";
 char* mqtt_server = "l40840f6.en.emqx.cloud";//"m16.cloudmqtt.com";
 #define mqtt_port 12245
 #define MQTT_USER "wafiq"
@@ -31,7 +31,7 @@ void setup_wifi() {
       delay(500);
       Serial.print(".");
     }
-    randomSeed(micros());
+//    randomSeed(micros());
     Serial.println("");
     Serial.println("WiFi connected");
     Serial.println("IP address: ");
@@ -77,8 +77,8 @@ void setup() {
   Serial.begin(115200);
   Serial.setTimeout(500);// Set time out for 
   setup_wifi();
-  client.setServer(mqtt_server, mqtt_port);
-  client.setCallback(callback);
+//  client.setServer(mqtt_server, mqtt_port);
+//  client.setCallback(callback);
   reconnect();
 }
 
