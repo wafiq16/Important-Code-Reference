@@ -44,5 +44,5 @@ void loop()
   else
     Blynk.notify("No Object Detected");
   digitalWrite(Pin_Led, Pir_State);
- Blynk.virtualWrite(V0, Pir_State); 
- }
+  Blynk.virtualWrite(V0, Pir_State); 
+}
